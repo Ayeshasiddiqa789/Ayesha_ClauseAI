@@ -1,6 +1,6 @@
 # Clause-AI — Contract Analysis with Multi-Agent RAG
 
-> **Intelligent contract analysis using Retrieval-Augmented Generation (RAG), multi-agent architecture, and persistent agent memory in Pinecone.**
+> **Intelligent contract analysis using Retrieval-Augmented Generation (RAG), multi-agent orchestration, and persistent agent memory.**
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![Pinecone](https://img.shields.io/badge/Pinecone-Vector%20DB-green)](https://www.pinecone.io/)
@@ -14,6 +14,7 @@
 - [Architecture](#architecture)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
+- [Current Repo](#current-repo)
 - [Milestone Deliverables](#milestone-deliverables)
 - [Configuration](#configuration)
 - [Troubleshooting](#troubleshooting)
@@ -28,6 +29,13 @@
 - **Multi-Agent Architecture**: Specialized agents (Legal, Compliance, Finance, Operations) for domain-specific analysis
 - **Persistent Agent Memory**: Stores agent outputs as vectors in Pinecone for instant recall without re-execution
 - **Parallel Processing**: Async execution for 3-4x faster multi-agent runs
+
+The repository is organized as a milestone-driven build:
+
+- `milestone1`: planning, setup, and exploratory analysis
+- `milestone2`: Pinecone vector search and RAG retrieval
+- `milestone3`: parallel agents, verification, and persistent memory
+- `milestone4`: Streamlit UI + FastAPI backend
 
 ### Key Features
 
@@ -94,7 +102,7 @@
 ## 📁 Project Structure
 
 ```
-legal-contracts-eda/
+Clause-AI/
 ├── README.md                    # This file
 ├── requirements.txt             # Python dependencies
 ├── .env.example                 # Environment variable template
@@ -128,6 +136,14 @@ legal-contracts-eda/
 ├── models_cache/                # HuggingFace model cache (gitignored)
 └── venv/                        # Python virtual environment (gitignored)
 ```
+
+## Current Repo
+
+The project is published here:
+
+- [Ayesha_ClauseAI](https://github.com/Ayeshasiddiqa789/Ayesha_ClauseAI)
+
+If you clone it locally, work from the `main` branch and keep secrets in `.env` only.
 
 ---
 
@@ -202,6 +218,12 @@ Notes:
    - Start with `milestone1/Milestone1_ProjectPlanning_Setup_EDA.ipynb`
    - Then `milestone2/Milestone2_Pinecone_VectorDB.ipynb`
    - Finally `milestone3/Milestone3_ParallelAgents_PersistentMemory.ipynb`
+
+### Recommended repo hygiene
+
+- Keep API keys and tokens out of notebooks and committed JSON outputs.
+- Use `.env.example` as the template for local configuration.
+- If you regenerate notebook outputs, review them before committing.
 
 ---
 

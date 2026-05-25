@@ -58,6 +58,16 @@ venv.bak/
 *.swp
 *.swo
 
+# Local editor and environment metadata
+.envrc
+.python-version
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+*.log
+*.tmp
+
 # Streamlit / benchmarking artifacts
 .streamlit/
 .benchmarks/
